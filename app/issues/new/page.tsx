@@ -48,7 +48,6 @@ const NewIssuePage = () => {
           <Callout.Text>{error}</Callout.Text>
         </Callout.Root>
       )}
-
       <form onSubmit={handleSubmit(onSubmit)} className='space-y-3'>
         <TextField.Root>
           <TextField.Input
