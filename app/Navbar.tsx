@@ -52,7 +52,6 @@ const Navbar = () => {
           </Flex>
           <Box>
             {status === 'authenticated' && (
-              // <Link href='/api/auth/signout'>Log out</Link>
               <DropdownMenu.Root>
                 <DropdownMenu.Trigger>
                   <Avatar
@@ -60,6 +59,7 @@ const Navbar = () => {
                     radius='full'
                     size='2'
                     src={session.user!.image!}
+                    referrerPolicy='no-referrer'
                     fallback='?'
                   />
                 </DropdownMenu.Trigger>
