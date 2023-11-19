@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .nav-link {
+    @apply text-zinc-500 hover:text-zinc-800 transition-colors;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #fff !important;
