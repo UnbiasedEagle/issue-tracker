@@ -1,5 +1,7 @@
+import Pagination from '@/app/components/Pagination';
+
 const HomePage = () => {
-  return <div>Hello World</div>;
+  return <Pagination itemCount={100} pageSize={10} currentPage={2} />;
 };
 
 export default HomePage;
