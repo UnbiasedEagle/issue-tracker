@@ -1,7 +1,19 @@
 import Pagination from '@/app/components/Pagination';
 
-const HomePage = () => {
-  return <Pagination itemCount={100} pageSize={10} currentPage={2} />;
+interface Props {
+  searchParams: {
+    page: string;
+  };
+}
+
+const HomePage = ({ searchParams }: Props) => {
+  return (
+    <Pagination
+      itemCount={100}
+      pageSize={10}
+      currentPage={Number(searchParams.page)}
+    />
+  );
 };
 
 export default HomePage;
