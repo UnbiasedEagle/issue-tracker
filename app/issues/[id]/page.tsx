@@ -68,4 +68,6 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
+export const dynamic = 'force-dynamic';
+
 export default IssueDetailPage;
